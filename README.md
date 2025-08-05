@@ -1,1 +1,1 @@
-# neogenstudy-Website
+# NeoGenStudy-Website
