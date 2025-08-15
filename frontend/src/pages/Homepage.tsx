@@ -6,44 +6,44 @@ const Homepage: React.FC = () => {
   const features = [
     {
       icon: BookOpen,
-      title: 'Smart 100-Day Plans',
-      description: 'Personalized study roadmaps tailored for NEET, JEE, CUET & more'
+      title: 'AI-Driven Study Plans',
+      description: 'Personalized study roadmaps powered by AI for JEE & NEET'
     },
     {
       icon: Users,
-      title: 'Study Groups',
-      description: 'Connect with peers, share doubts, and learn together'
+      title: 'Smart Study Groups',
+      description: 'Connect with peers and get AI-assisted group learning'
     },
     {
       icon: BarChart3,
-      title: 'Progress Analytics',
-      description: 'Track your performance with detailed insights and charts'
+      title: 'Advanced Analytics',
+      description: 'Track your progress with AI-powered performance insights'
     },
     {
       icon: Award,
-      title: 'Gamified Learning',
-      description: 'Earn points, maintain streaks, and compete on leaderboards'
+      title: 'Personalized Learning',
+      description: 'Get customized learning paths adapted to your needs'
     }
   ];
 
   const testimonials = [
     {
       name: 'Priya Sharma',
-      exam: 'NEET 2024',
+      exam: 'NEET 2025',
       score: '680/720',
-      text: 'The 100-day study plan was a game-changer. I improved my score by 150 points!'
+      text: 'The AI-powered study plan helped me improve my score dramatically!'
     },
     {
       name: 'Arjun Patel',
-      exam: 'JEE Main 2024',
-      score: '96.8 percentile',
-      text: 'Study groups helped me clear my doubts instantly. Highly recommend!'
+      exam: 'JEE Main 2025',
+      score: '99.2 percentile',
+      text: 'The personalized learning paths and analytics transformed my preparation.'
     },
     {
       name: 'Kavya Reddy',
-      exam: 'CUET 2024',
-      score: '98.2 percentile',
-      text: 'The analytics feature helped me identify weak areas and improve systematically.'
+      exam: 'JEE Advanced 2025',
+      score: '98.6 percentile',
+      text: 'Smart study groups and AI assistance made complex topics easy to grasp.'
     }
   ];
 
@@ -62,11 +62,17 @@ const Homepage: React.FC = () => {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">NG</span>
+                <img src="/images/logo.png" alt="NeoGenStudy Logo" className="w-8 h-8 object-contain" />
               </div>
               <span className="text-xl font-bold text-gray-900">NeoGenStudy</span>
             </div>
             <div className="flex items-center space-x-4">
+              {/* <Link
+                to="/resources"
+                className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium"
+              >
+                Resources
+              </Link> */}
               <Link
                 to="/login"
                 className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium"
@@ -89,13 +95,13 @@ const Homepage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              Master <span className="text-blue-600">NEET, JEE, CUET</span>
+              Your AI Study <span className="text-blue-600">Companion</span>
               <br />
-              with Smart Study Plans
+              for JEE ,NEET..etc
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Join thousands of students who've cracked competitive exams with our AI-powered study plans, 
-              instant doubt solving, and collaborative learning platform.
+              Master competitive exams with personalized AI-driven study plans, 
+              curated resources, and smart analytics.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
               <Link
@@ -103,6 +109,13 @@ const Homepage: React.FC = () => {
                 className="bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-200 flex items-center space-x-2 shadow-lg"
               >
                 <span>Start Your Journey</span>
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+              <Link
+                to="/resources"
+                className="bg-white text-blue-600 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-blue-50 transform hover:scale-105 transition-all duration-200 flex items-center space-x-2 shadow-lg border-2 border-blue-600"
+              >
+                <span>View Resources</span>
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
@@ -220,7 +233,7 @@ const Homepage: React.FC = () => {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">NG</span>
+                    <img src="/images/logo.png" alt="NeoGenStudy Logo" className="w-8 h-8 object-contain" />
                 </div>
                 <span className="text-xl font-bold text-white">NeoGenStudy</span>
               </div>
@@ -243,19 +256,20 @@ const Homepage: React.FC = () => {
               <h3 className="text-lg font-semibold text-white mb-4">Exams</h3>
               <ul className="space-y-2">
                 <li><a href="#" className="hover:text-white transition-colors">NEET</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">JEE Main & Advanced</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">CUET</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">GATE</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">JEE Main</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">JEE Advanced</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">KVPY</a></li>
               </ul>
             </div>
             
             <div>
               <h3 className="text-lg font-semibold text-white mb-4">Support</h3>
               <ul className="space-y-2">
+                <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
                 <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
+                {/* <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li> */}
               </ul>
             </div>
           </div>

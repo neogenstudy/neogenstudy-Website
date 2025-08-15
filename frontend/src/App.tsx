@@ -16,6 +16,7 @@ import MockTest from './pages/MockTest';
 import Referral from './pages/Referral';
 import AdminDashboard from './pages/admin/AdminDashboard';
 import ProtectedRoute from './components/ProtectedRoute';
+import About from './pages/About';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Routes>
               {/* Public Routes */}
               <Route path="/" element={<Homepage />} />
+              <Route path="/about" element={<About />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               
