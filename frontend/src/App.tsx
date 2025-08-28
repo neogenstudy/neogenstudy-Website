@@ -17,6 +17,7 @@ import Referral from './pages/Referral';
 import AdminDashboard from './pages/admin/AdminDashboard';
 import ProtectedRoute from './components/ProtectedRoute';
 import About from './pages/About';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               {/* Public Routes */}
               <Route path="/" element={<Homepage />} />
               <Route path="/about" element={<About />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               

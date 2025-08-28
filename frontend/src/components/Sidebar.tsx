@@ -46,7 +46,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
           <div className="flex items-center justify-between p-4 border-b border-gray-200 lg:hidden">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">NG</span>
+                <span className="text-white font-bold text-sm">YS</span>
               </div>
               <span className="text-xl font-bold text-gray-900">NeoGenStudy</span>
             </div>
@@ -110,9 +110,12 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
             <div className="bg-yellow-50 rounded-lg p-3">
               <p className="text-sm text-yellow-800 font-medium">Need Help?</p>
               <p className="text-xs text-yellow-600 mt-1">Chat with our support team</p>
-              <button className="mt-2 text-xs bg-yellow-200 text-yellow-800 px-2 py-1 rounded hover:bg-yellow-300">
-                Contact Support
-              </button>
+                <button
+                  className="mt-2 text-xs bg-yellow-200 text-yellow-800 px-2 py-1 rounded hover:bg-yellow-300"
+                  onClick={() => { href = 'mailto:neogenstudy@gmail.com'; }}
+                >
+                  Contact Support
+                </button>
             </div>
           </div>
         </div>

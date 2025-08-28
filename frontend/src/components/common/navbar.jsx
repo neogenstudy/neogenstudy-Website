@@ -22,7 +22,11 @@ const Navbar = () => {
               <img 
                 src="/images/logo.png" 
                 alt="NeoGen Study Logo" 
-                className="h-8 w-auto"
+                className="h-8 w-auto object-contain"
+                onError={(e) => {
+                  console.error('Logo failed to load');
+                  e.target.style.display = 'none';
+                }}
               />
             </Link>
           </div>

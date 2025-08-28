@@ -267,7 +267,7 @@ const Homepage: React.FC = () => {
               <ul className="space-y-2">
                 <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
                 <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
+                <li><Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
                 <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
                 {/* <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li> */}
               </ul>

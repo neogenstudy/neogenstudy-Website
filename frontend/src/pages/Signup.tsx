@@ -42,8 +42,8 @@ const Signup: React.FC = () => {
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <div className="text-center mb-8">
             <div className="flex items-center justify-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold">NG</span>
+              <div className="w-8 h-8 bg-blue-600 rounded-xl flex items-center justify-center">
+                <img src="/images/logo.png" alt="NeoGenStudy Logo" className="w-8 h-8 object-contain" />
               </div>
               <span className="text-2xl font-bold text-gray-900">NeoGenStudy</span>
             </div>
